@@ -15,6 +15,11 @@ public class MainApplicationBoot {
 	
 	@RequestMapping("/")
 	public String home() {
-		return "index";
+		return "/principal/index";
+	}
+	
+	@RequestMapping("/login")
+	public String login() {
+		return "login";
 	}
 }
