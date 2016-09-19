@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @SpringBootApplication
 @Controller
-public class ModeloTemplateApplication {
+public class MainApplicationBoot {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ModeloTemplateApplication.class, args);
+		SpringApplication.run(MainApplicationBoot.class, args);
 	}
 	
 	@RequestMapping("/")
