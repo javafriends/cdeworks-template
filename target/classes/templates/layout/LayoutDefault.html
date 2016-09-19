@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>CDE Works - Título aqui</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+	<!-- Bootstrap 3.3.6 -->
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+	<link rel="stylesheet" th:href="@{/vendors/css/AdminLTE.min.css}" />
+	
+	<link rel="stylesheet" th:href="@{/vendors/css/skins/skin-blue.min.css}" />
+	
+	<link rel="icon" type="image/png" th:href="@{/images/logo-imagem-favicon.png}" />
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+	<div class="wrapper">
+
+		<!-- Main Header -->
+		<header layout:include="layout/header" class="main-header" ></header>
+		<!-- Left side column. contains the logo and sidebar -->
+		
+		
+		<aside class="main-sidebar">
+			<!-- sidebar: style can be found in sidebar.less -->
+			<section class="sidebar" layout:include="layout/sidebar"></section>
+			<!-- /.sidebar -->
+		</aside>
+
+		<!-- Content Wrapper. Contains page content ================================================================================================================= -->
+		<section layout:fragment="conteudo">
+			<p>Conteúdo principal</p>
+		</section>
+		<!-- /.content-wrapper ====================================================================================================================================== -->
+
+		<!-- Main Footer -->
+		<footer class="main-footer" layout:include="layout/footer"></footer>
+
+		<!-- Control Sidebar -->
+		<aside class="control-sidebar control-sidebar-dark" layout:include="layout/controlsidebar"></aside>
+		<!-- /.control-sidebar -->
+		
+		<!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+		<div class="control-sidebar-bg"></div>
+	</div>
+	<!-- ./wrapper -->
+
+	<!-- REQUIRED JS SCRIPTS -->
+
+	<!-- jQuery 2.2.3 -->
+	<script th:src="@{plugins/jQuery/jquery-2.2.3.min.js}"></script>
+	<!-- Bootstrap 3.3.6 -->
+	<script th:src="@{/js/bootstrap.min.js}"></script>
+	<!-- AdminLTE App -->
+	<script th:src="@{/vendors/js/app.min.js}"></script>
+	
+	<!-- Javascripts content ================================================================================================================= -->
+	<section layout:fragment="conteudoJS">
+		<p>Inserir javascripts aqui</p>
+	</section>
+	<!-- Javascripts content ============================================================================================================== -->
+</body>
+</html>
