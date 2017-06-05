@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: modelo-template
 Implementation-Version: 1.0.0-SNAPSHOT
-Built-By: Daniel
+Built-By: daniel215969
 Implementation-Vendor-Id: br.com.javafriends
-Build-Jdk: 1.8.0_101
+Build-Jdk: 1.8.0_31
 Implementation-URL: http://projects.spring.io/spring-boot/modelo-templ
  ate/
 Created-By: Maven Integration for Eclipse

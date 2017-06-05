@@ -12,12 +12,13 @@ public class MainApplicationBoot {
 	public static void main(String[] args) {
 		SpringApplication.run(MainApplicationBoot.class, args);
 	}
-	
+
+
 	@RequestMapping("/")
 	public String home() {
 		return "/principal/index";
 	}
-	
+
 	@RequestMapping("/login")
 	public String login() {
 		return "login";
